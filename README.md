@@ -15,7 +15,8 @@ Template to run wordpress with Docker.
 
 This could take a few minutes (or more) depending on your internet connection speed. 
 
-# Final Step: Access WordPress Dashboard And Install Divi (https://www.elegantthemes.com/documentation/divi/install-divi/)
+# Final Step: Access WordPress Dashboard And Install Divi 
+        - (https://www.elegantthemes.com/documentation/divi/install-divi/)
 
 
 
@@ -24,20 +25,20 @@ This could take a few minutes (or more) depending on your internet connection sp
 # You can use the following commands to manage your containers. Be sure to run them from inside your workspace directory:
 
 # Enter Container (get command prompt inside container)
-docker-compose exec -u 1000 wordpress /bin/bash
+        - docker-compose exec -u 1000 wordpress /bin/bash
 
 # Exit Container (return to your system’s command prompt)
-exit
+        - exit
 
 # Stop Running Containers
-docker-compose stop
+        - docker-compose stop
 
 # Start Stopped Containers
-docker-compose start
+        - docker-compose start
 
 # Remove Containers (WordPress database will be deleted!)
-docker-compose down
+        - docker-compose down
 
 # Start New Containers
-docker-compose up -d
-docker-compose exec -u 1000 wordpress divi-dev setup
+        - docker-compose up -d
+        - docker-compose exec -u 1000 wordpress divi-dev setup
